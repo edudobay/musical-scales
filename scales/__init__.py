@@ -46,6 +46,10 @@ class ToneBasis:
         return scale_from_rates(origin, self.rates())
 
     def to_scale(self, origin):
+        """
+         Return a Scale object formed by the intervals of this basis applied to the
+         note of frequency `origin`.
+        """
         return Scale(origin, self.rates())
 
 class Scale:
